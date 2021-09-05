@@ -1,0 +1,58 @@
+.header{
+    font-size: 80px;
+    text-align: center;
+    animation-name: header;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    font-family: 'Allison', cursive;
+    color: orange;
+    margin-top: -10px;
+}
+@keyframes header {
+    from{
+        color: red;
+        transform: rotateY(0deg);
+    }
+    to{
+        color: orange;
+        transform: rotateY(360deg);
+    }
+}
+.details{
+    font-size: 30px;
+    color: orange;
+}
+.by{
+    font-family: 'Hina Mincho', serif;
+    font-size: 40px;
+    text-align: center;
+    color: olive;
+}
+.about{
+    color: skyblue;
+    font-size: 20px;
+}
+.thanks{
+    text-align: center;
+    border: 2px dashed mediumslateblue;
+    border-radius: 100px;
+    width: fit-content;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: mediumslateblue;
+}
+@media screen and (max-width:700px) {
+    .header{
+        font-size: 40px;
+    }
+    .details{
+        font-size: 15px;
+    }
+    .about{
+        font-size: 10px;
+    }
+    .thanks{
+        font-size: 10px;
+    }
+}
